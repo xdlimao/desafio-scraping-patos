@@ -113,5 +113,5 @@ resposta_final["reviews_average_score"] = float(soup.find("h4", string=re.compil
 
 resposta_final["url"] = url
 
-with open("produto.json", "w") as outfile:
+with open("produto.json", "w", encoding='utf8') as outfile:
     json.dump(resposta_final, outfile)
